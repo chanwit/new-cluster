@@ -10,5 +10,5 @@ jobs:
     - uses: chanwit/action-eksctl@latest
       with:
         region: us-west-2
-        awsAccessKeyId: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        awsSecretAccessKey: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        awsAccessKeyId: ${{ secrets.awsAccessKeyId }}
+        awsSecretAccessKey: ${{ secrets.awsSecretAccessKey }}
