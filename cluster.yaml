@@ -1,0 +1,14 @@
+apiVersion: gitops.eksctl.io/v1alpha1
+kind: Cluster
+spec:
+  state: absent
+  template:
+    apiVersion: eksctl.io/v1alpha5
+    kind: ClusterConfig
+    metadata:
+      name: eks-multi
+      region: us-west-2
+    nodeGroups:
+      - name: ng-1
+        instanceType: m5.large
+        desiredCapacity: 2
