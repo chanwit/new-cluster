@@ -1,7 +1,7 @@
 apiVersion: gitops.eksctl.io/v1alpha1
 kind: Cluster
 spec:
-  state: present
+  state: absent
   template:
     apiVersion: eksctl.io/v1alpha5
     kind: ClusterConfig
