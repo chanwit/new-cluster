@@ -1,6 +1,9 @@
 name: "GitOps CI"
 
-on: [push]
+on:
+  push:
+    paths:
+    - 'cluster.yaml'
 
 jobs:
   gitops:
