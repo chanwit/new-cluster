@@ -15,4 +15,4 @@ jobs:
         region: us-west-2
         awsAccessKeyId: ${{ secrets.awsAccessKeyId }}
         awsSecretAccessKey: ${{ secrets.awsSecretAccessKey }}
-        githubToken: ${{ github.token }}
+        githubToken: ${{ secrets.githubToken }}
