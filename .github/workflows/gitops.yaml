@@ -10,8 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: chanwit/action-eksctl@v1
+    - uses: chanwit/action-eksctl@v2
       with:
         region: us-west-2
         awsAccessKeyId: ${{ secrets.awsAccessKeyId }}
         awsSecretAccessKey: ${{ secrets.awsSecretAccessKey }}
+        githubToken: ${{ GITHUB_TOKEN }}
