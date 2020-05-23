@@ -1,5 +1,7 @@
 apiVersion: gitops.eksctl.io/v1alpha1
 kind: Cluster
+metadata:
+  revision: 1
 spec:
   state: present
   timeout: 40m
@@ -15,5 +17,3 @@ spec:
         instanceType: m5.xlarge
         desiredCapacity: 2
         volumeSize: 120
-  profiles:
-    - https://github.com/weaveworks/mlops-profile
