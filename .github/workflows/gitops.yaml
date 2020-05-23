@@ -2,6 +2,8 @@ name: "GitOps CI"
 
 on:
   push:
+    branches:
+    - 'master'    
     paths:
     - 'cluster.yaml'
 
@@ -10,9 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: chanwit/action-eksctl@v3
+    - uses: chanwit/action-eksctl@v13
       with:
-        region: us-west-2
         awsAccessKeyId: ${{ secrets.awsAccessKeyId }}
         awsSecretAccessKey: ${{ secrets.awsSecretAccessKey }}
         githubToken: ${{ secrets.githubToken }}
