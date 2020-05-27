@@ -9,7 +9,7 @@ spec:
     apiVersion: eksctl.io/v1alpha5
     kind: ClusterConfig
     metadata:
-      name: new-cluster
+      name: sample
       region: us-west-2
       version: "1.16"
     nodeGroups:
