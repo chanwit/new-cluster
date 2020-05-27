@@ -3,17 +3,17 @@ kind: Cluster
 metadata:
   revision: 1
 spec:
-  state: present
+  state: absent
   timeout: 40m
   template:
     apiVersion: eksctl.io/v1alpha5
     kind: ClusterConfig
     metadata:
-      name: eks-multi
+      name: sample
       region: us-west-2
       version: "1.16"
     nodeGroups:
-      - name: ng-1
-        instanceType: m5.xlarge
-        desiredCapacity: 2
-        volumeSize: 120
+    - name: ng-1
+      instanceType: m5.xlarge
+      desiredCapacity: 2
+      volumeSize: 120
