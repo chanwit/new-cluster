@@ -1,1 +1,1 @@
-# EKS cluster template
+# GitOps-managed Cluster
