@@ -1,1 +1,1 @@
-# action-eksctl-test
+# EKS cluster template
