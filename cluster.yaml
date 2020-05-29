@@ -3,7 +3,7 @@ kind: Cluster
 metadata:
   revision: 1
 spec:
-  state: absent
+  state: present
   timeout: 40m
   template:
     apiVersion: eksctl.io/v1alpha5
