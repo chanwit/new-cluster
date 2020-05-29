@@ -17,3 +17,5 @@ spec:
       instanceType: m5.xlarge
       desiredCapacity: 2
       volumeSize: 120
+  profiles:
+  - https://github.com/weaveworks/mlops-profile
