@@ -14,7 +14,7 @@ jobs:
     - name: Checking out cluster template ...
       uses: actions/checkout@v1
     - name: Provisioning GitOps-based cluster ...
-      uses: chanwit/action-eksctl@v13
+      uses: chanwit/action-eksctl@v14
       with:
         awsAccessKeyId: ${{ secrets.AWS_ACCESS_KEY_ID }}
         awsSecretAccessKey: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
