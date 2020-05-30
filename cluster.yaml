@@ -9,13 +9,17 @@ spec:
     apiVersion: eksctl.io/v1alpha5
     kind: ClusterConfig
     metadata:
-      name: new-cluster
+      name: new-fargate
       region: us-west-2
       version: "1.16"
     nodeGroups:
     - name: ng-1
       instanceType: m5.xlarge
-      desiredCapacity: 2
+      desiredCapacity: 1
       volumeSize: 120
-  profiles:
-  - https://github.com/weaveworks/mlops-profile
+    fargateProfiles:
+    - name: fp-default
+      selectors:
+      - namespace: default
+      - namespace: application
+  profiles: []
