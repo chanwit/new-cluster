@@ -16,6 +16,6 @@ jobs:
     - name: Provisioning GitOps-based cluster ...
       uses: chanwit/action-eksctl@v13
       with:
-        awsAccessKeyId: ${{ secrets.awsAccessKeyId }}
-        awsSecretAccessKey: ${{ secrets.awsSecretAccessKey }}
-        githubToken: ${{ secrets.githubToken }}
+        awsAccessKeyId: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        awsSecretAccessKey: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        githubToken: ${{ secrets.GITHUBTOKEN }}
